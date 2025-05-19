@@ -68,12 +68,12 @@ Frontend will be on: http://localhost:5173
 
 ## 🥪 API Endpoints
 
-| Endpoint                        | Method | Description                          |
-|-------------------------------|--------|--------------------------------------|
-| /restaurants/                 | GET    | List restaurants (with pagination)   |
-| /restaurants/{id}/           | GET    | Get a single restaurant by ID        |
-| /restaurants/search/         | GET    | Get restaurants within 3km of lat/lng |
-| /classify-image/             | POST   | Upload food image → get cuisine + restaurants |
+| Endpoint             | Method | Description                                   |
+| -------------------- | ------ | --------------------------------------------- |
+| /restaurants/        | GET    | List restaurants (with pagination)            |
+| /restaurants/{id}/   | GET    | Get a single restaurant by ID                 |
+| /restaurants/search/ | GET    | Get restaurants within 3km of lat/lng         |
+| /classify-image/     | POST   | Upload food image → get cuisine + restaurants |
 
 ---
 
@@ -92,6 +92,7 @@ Accuracy is basic but suitable for demo purposes.
 ## ✨ Example Usage
 
 Frontend will allow:
+
 - Browsing restaurants
 - Searching by keyword or location
 - Uploading food images to search
@@ -101,6 +102,30 @@ Backend is modular — you can test via Postman or curl:
 ```bash
 curl -X POST -F "image=@icecream.jpg" http://localhost:8000/classify-image/
 ```
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](screenshots/HomePage.jpeg)
+
+### Restaurant List with Pagination
+
+![Pagination](screenshots/Pagination.jpeg)
+
+### Distance-based Search
+
+![Distance Search](screenshots/DistanceSearch.jpeg)
+
+### Filtering Options
+
+![Filtering](screenshots/Filtering.jpeg)
+
+### Image Recognition for Cuisine Search
+
+![Image Recognition](screenshots/Image_recognition.jpeg)
 
 ---
 
